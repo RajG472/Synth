@@ -1,19 +1,46 @@
-# Working Synthesizer Model 
-## Project structure
-  
-The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
-  
-The backend code is in the `convex` directory.
-  
-`npm run dev` will start the frontend and backend servers.
+# Virtual Synthesizer
 
-## Developing and deploying your app
+A browser-based virtual synthesizer built with React and the Web Audio API.
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
-* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
+## Features
 
-## HTTP API
+- Play a full chromatic keyboard via mouse or computer keyboard
+- Switch between octaves 1–7
+- Morph between four waveforms: sine, triangle, sawtooth, and square
+- Kill switch to instantly silence all audio
 
-User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
+## Keyboard Mapping
+
+| Key | Note |
+|-----|------|
+| A | C |
+| W | C# |
+| S | D |
+| E | D# |
+| D | E |
+| F | F |
+| T | F# |
+| G | G |
+| Y | G# |
+| H | A |
+| U | A# |
+| J | B |
+| Z | Octave down |
+| X | Octave up |
+
+## Getting Started
+
+You'll need [Node.js](https://nodejs.org) installed (download the LTS version).
+
+**Mac:** Right-click the project folder, hold Option (⌥), and click "Open Terminal at Folder."
+
+**Windows:** Click the address bar in File Explorer, type `cmd`, and hit Enter.
+
+Then run:
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser and you're good to go.
